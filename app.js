@@ -15,7 +15,7 @@ const port = 3000;
 //app.use(express.static('public', options))
 
 app.get('/', (req, res)=>{
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('')
     .then(response => {
         console.log(response.data.url);
         console.log(response.data.explanation);
